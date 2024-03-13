@@ -15,9 +15,7 @@ const UserSchema = new Schema({
     type: Number,
     required: [true, "Age is required"]
   },
-  active: {
-    type: Boolean,
-  }
+  active: Boolean
 });
 
 export default mongoose.models.UserSchema || mongoose.models("UserSchema", UserSchema);
